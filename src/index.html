@@ -11,12 +11,11 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <form 
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post">
       <fieldset>
-        <legend>Personal Information</legend> 
+        <legend>Personal information</legend> 
         <label class="form-field">
           Surname:
           <input 
@@ -75,9 +74,9 @@
         </label>
       </fieldset>
       <fieldset>
-        <legend>An intresting fact about you!</legend>
+        <legend>An interesting fact about you!</legend>
         Do you love cats?
-        <label class="form-field">
+        <label class="inline">
           <input 
           type="radio" 
           name="cats" 
@@ -85,7 +84,7 @@
           >
           Yes
         </label>
-        <label class="form-field">
+        <label class="inline">
           <input 
           type="radio" 
           name="cats" 
@@ -111,12 +110,16 @@
           <select name="brands" multiple>
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
-            <option value="Opel">Opel</option>
+            <option value="Lada">Lada</option>
           </select>
         </label>
         <label class="form-field">
           How do you rate our work?
-          <input type="range" name="range">
+          <input 
+          type="range" 
+          name="range"
+          value="0"
+          >
         </label>
       </fieldset>
       <fieldset>
@@ -125,8 +128,6 @@
           Comments:
           <textarea 
           name="comment" 
-          cols="30" 
-          rows="10"
           >
           </textarea>
         </label>
