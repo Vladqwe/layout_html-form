@@ -14,7 +14,7 @@
     <form 
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="post">
-      <fieldset>
+      <fieldset class="groups">
         <legend>Personal information</legend> 
         <label class="form-field">
           Surname:
@@ -51,7 +51,7 @@
           <input type="checkbox" name="Agreement">
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="groups">
         <legend>Registration</legend>
         <label class="form-field">
           E-mail:
@@ -73,7 +73,7 @@
           >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="groups">
         <legend>An interesting fact about you!</legend>
         Do you love cats?
         <label class="inline">
@@ -122,14 +122,11 @@
           >
         </label>
       </fieldset>
-      <fieldset>
+      <fieldset class="groups">
         <legend>Additional info:</legend>
         <label class="form-field">
           Comments:
-          <textarea 
-            name="comment" 
-          >
-          </textarea>
+          <textarea name="comment"></textarea>
         </label>
         <label class="form-field">
           Would you recommend us?
